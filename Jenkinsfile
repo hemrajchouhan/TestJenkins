@@ -7,7 +7,7 @@ node('master'){
    }
    stage('Compile-Package'){      
         def MVNHOME=tool name: 'MAVEN_HOME', type: 'maven'
-        sh "${MVNHOEM}/bin/mvn package"
+        sh "${MVNHOME}/bin/mvn package"
    }
    
    stage('SELENIUM TEST'){
